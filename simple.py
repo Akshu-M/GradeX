@@ -89,7 +89,7 @@ user_main=""
 def prof():
     global user_main, name_main, usn_main
     if(user_main == ""):
-        return "nakkan dont try to access without login"
+        return "Dont try to access without login"
     cursor = mysql.connection.cursor()
     name_main = cursor.execute(f"select Name from Namelist where usn = '1BI22IS{user_main}'" )
     usn_main = f"1BI22IS{user_main[4:]}"
